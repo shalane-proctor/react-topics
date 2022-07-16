@@ -29,6 +29,6 @@ Loading.propTypes = {
 };
 
 Loading.defaultProps = {
-  color: 'red',
+  color: 'aquamarine',
   children: 'nothing here',
 };

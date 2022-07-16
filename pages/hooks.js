@@ -8,7 +8,10 @@ export default function Hooks() {
     const timer = setTimeout(() => {
       setStateHook('The useEffect Loaded Me!');
     }, 5000);
-    return () => clearTimeout(timer);
+    const timer2 = setTimeout(() => {
+      setStateHook('Yay Effects!!!!');
+    }, 5000);
+    return () => clearTimeout(timer, timer2);
   }, []);
 
   return <div>{stateHook}</div>;

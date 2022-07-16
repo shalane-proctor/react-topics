@@ -8,8 +8,8 @@ export default function Events() {
     setEventText('Button was Clicked!');
   };
 
-  const handleChange = (event) => {
-    const { value } = event.target;
+  const handleChange = (taco) => {
+    const { value } = taco.target;
     setInputValue(value);
     setEventText(value);
   };
